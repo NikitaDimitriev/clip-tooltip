@@ -1,0 +1,60 @@
+<template>
+    <div class="container">
+      <div class="inner">
+        <span>i</span>
+        <h1>Hey</h1>
+        <p>How the Supermarket Helped America Win the Cold War </p>
+      </div>
+    </div>
+</template>
+
+<script>
+export default {
+  name: "HelloWorld",
+  props: {
+    msg: String
+  }
+};
+</script>
+
+<style lang="scss">
+
+
+
+
+  .inner{
+    background: rgb(7, 218, 165);
+    padding: 1em;
+    border-radius: 10px;
+    width: 250px;
+    clip-path: circle(10% at 90% 20%);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+
+
+    &:hover{
+      clip-path: circle(75%);
+      background: #00b6ff;
+    }
+    &:hover span{
+      color:rgba(255,255,255,0)
+    }
+    span{
+      float: right;
+      color: white;
+      font-weight: bold;
+      transition: color .5s;
+      position: relative;
+      margin-right: 4%;
+    }
+    h1{
+      color: white;
+      margin:0;
+    }
+    p{
+      color: white;
+      font-size: .8rem;
+    }
+  }
+
+</style>
