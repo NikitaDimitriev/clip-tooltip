@@ -17,14 +17,15 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
-
+body{
+  margin: 0!important;
+}
 #app {
   background: #DCF5FF;
   margin: 0;
   height: 100vh;
-  display: grid;
-  justify-items: center;
-  align-items: center;
+  width: 100vw;
+  display: flex;
   font-family: 'Nunito', 'sans-serif'
 }
 </style>
